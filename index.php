@@ -16,7 +16,6 @@ $users=User::findAll();
 //$res=$db->execute('CREATE TABLE foo (id SERIAL)');
 echo '<pre>'.print_r($users,1).'</pre>';
 
-
 //function sendMail(User $user, string $message) //class
 //function sendMail(Model $user, string $message) //Parent class Model
 function sendMail(App\Models\HasEmail $user, string $message) //Interface

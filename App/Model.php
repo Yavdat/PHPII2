@@ -5,7 +5,7 @@ namespace App;
 abstract class Model
 {
     const TABLE='';
-
+    
     public static function findAll()
     {
         $db=Db::instance();

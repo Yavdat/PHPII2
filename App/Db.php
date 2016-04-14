@@ -20,6 +20,7 @@ class Db
         return $res;
     }
 
+    
     public function query($sql, $class)
     {
         $sth=$this->dbh->prepare($sql);
