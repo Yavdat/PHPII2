@@ -11,7 +11,7 @@ require __DIR__.'/autoload.php';
 $users=User::findAll();
 
 //$res=$db->execute('CREATE TABLE foo (id SERIAL)');
-function sendEmail(\App\Model $user, string $message)
+function sendEmail(HasEmail $user, string $message)
 {
     echo 'The message is sent to '.$user->email;
 }
